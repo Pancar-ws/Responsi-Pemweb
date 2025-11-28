@@ -33,35 +33,11 @@
 - Wisata → atribut + method CRUD
 - Homestay → atribut + method CRUD
 - PemesananTiket, PemesananHomestay
-## Ide 2 “PapuaCraft” – Marketplace Kerajinan Khas Papua (Noken, Ukiran Asmat, dll)
 
-**2 Jenis Akun**
-1. Pembeli
-2. Pengrajin (penjual)
+## References
+### GitHub Repository
 
-**Keunggulan**
-- Tema budaya Papua sangat kuat
-- Bisa foto-foto produk menarik di Figma
-- CRUD produk oleh pengrajin
-
-**Tabel** users, produk_kerajinan, keranjang, transaksi
-## Ide 3 “PapuaGuide” – Platform Booking Tour Guide Lokal Papua
-
-**2 Jenis Akun**
-1. Wisatawan
-2. Tour Guide Lokal
-
-**Fitur**
-- Wisatawan cari guide berdasarkan kabupaten, bahasa suku, rating
-- Guide buat profil + jadwal available → CRUD
-
-Sangat ringan backend-nya.
-## Ide 4 “PapuaGuide” – Platform Booking Tour Guide Lokal Papua
-
-**2 Jenis Akun**
-1. Pengunjung
-2. Panitia Event (misal Festival Baliem, Lembah Baliem)
-
-**Fitur**
-- Panitia buat event baru (CRUD)
-- Pengunjung daftar event (jumlah peserta, dll)
+1. https://github.com/adilloastz/travelvista-website-php
+2. https://github.com/Ir001/php-travelkuy
+3. https://github.com/taufiqulaptiyan/web-travel
+4. https://github.com/banago/simple-php-website
