@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Explore Papua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="brand"><h2>Admin Panel</h2><p>Explore Papua</p></div>
+            <ul class="menu">
+                <li class="active" onclick="showSection('dashboard', this)">📊 Dashboard</li>
+                <li onclick="showSection('tours', this)">🌴 Kelola Paket</li>
+                <li onclick="showSection('orders', this)">📦 Kelola Pesanan</li>
+                <li class="logout"><a href="../home/index.html">🚪 Keluar</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <header><h2 id="pageTitle">Dashboard Overview</h2><div class="admin-profile"><span>Halo, Admin</span><img src="https://ui-avatars.com/api/?name=Admin&background=006064&color=fff" alt="Admin"></div></header>
+            <div id="dashboard" class="section active">
+                <div class="stats-grid">
+                    <div class="card stat"><h3>Total Pendapatan</h3><p class="number">Rp 45.500.000</p></div>
+                    <div class="card stat"><h3>Pesanan Masuk</h3><p class="number">12</p></div>
+                    <div class="card stat"><h3>Paket Wisata</h3><p class="number">4</p></div>
+                </div>
+            </div>
+            <div id="tours" class="section" style="display: none;">
+                <div class="action-bar"><button class="btn-add">+ Tambah Paket Baru</button></div>
+                <div class="card"><table class="data-table"><thead><tr><th>ID</th><th>Nama Paket</th><th>Lokasi</th><th>Harga</th><th>Aksi</th></tr></thead><tbody id="tourTableBody"></tbody></table></div>
+            </div>
+            <div id="orders" class="section" style="display: none;">
+                <div class="card"><table class="data-table"><thead><tr><th>Order ID</th><th>Pemesan</th><th>Paket</th><th>Tanggal</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="orderTableBody"></tbody></table></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
