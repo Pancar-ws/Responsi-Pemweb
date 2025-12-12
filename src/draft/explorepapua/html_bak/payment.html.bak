@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/payment.css">
+</head>
+<body>
+    <nav class="navbar-simple"><a href="home.html" class="logo">Explore Papua</a></nav>
+    <div class="payment-container">
+        <div class="payment-methods">
+            <div class="timer-box"><p>Selesaikan pembayaran dalam</p><h2 id="countdown">00:59:59</h2><p class="deadline">Batas: <span id="deadlineTime">...</span></p></div>
+            <h3>Metode Pembayaran</h3>
+            <div class="method-card">
+                <input type="radio" name="payment" id="bca" checked>
+                <label for="bca" class="method-label"><div class="method-info"><strong>Bank BCA</strong><p>Dicek Otomatis</p></div></label>
+                <div class="method-detail"><p>No. Rek:</p><div class="copy-box"><span id="rek-bca">8830-1234-5678</span><button onclick="copyText('rek-bca')">Salin</button></div></div>
+            </div>
+            <button class="btn-confirm" onclick="finishPayment()">Saya Sudah Transfer</button>
+        </div>
+        <div class="order-summary">
+            <h3>Ringkasan</h3><p class="order-id">ID: <span id="displayId">...</span></p><hr>
+            <div class="summary-item"><strong>Paket</strong><p id="displayName">...</p></div>
+            <div class="summary-item"><strong>Tanggal</strong><p id="displayDate">...</p></div>
+            <div class="summary-item"><strong>Peserta</strong><p id="displayPax">...</p></div>
+            <hr><div class="total-pay"><span>Total</span><h2 id="displayTotal">Rp 0</h2></div>
+        </div>
+    </div>
+    <script src="assets/js/payment.js"></script>
+</body>
+</html>
