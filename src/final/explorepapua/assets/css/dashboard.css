@@ -1,0 +1,22 @@
+:root { --primary-color: #006064; --accent-color: #E0F7FA; --text-dark: #333; --text-light: #fff; --font-heading: 'Playfair Display', serif; --font-body: 'Lato', sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-body); color: var(--text-dark); background-color: #f4f6f8; }
+.navbar { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; z-index: 1000; color: var(--text-light); }
+.logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold; }
+.dashboard-container { display: flex; max-width: 1200px; margin: 80px auto 40px auto; padding: 20px; gap: 30px; min-height: 80vh; }
+.dashboard-sidebar { flex: 1; background: white; border-radius: 10px; padding: 30px; height: fit-content; }
+.user-info { text-align: center; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+.user-info img { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px; }
+.menu-list { list-style: none; }
+.menu-list a { display: block; padding: 12px 15px; text-decoration: none; color: #555; border-radius: 8px; font-weight: 500; }
+.menu-list a.active { background-color: var(--accent-color); color: var(--primary-color); }
+.dashboard-content { flex: 3; }
+.orders-list { display: flex; flex-direction: column; gap: 20px; }
+.order-card { background: white; border-radius: 10px; padding: 25px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 5px solid #2e7d32; }
+.order-info h4 { font-size: 1.2rem; margin-bottom: 5px; }
+.order-meta { font-size: 0.9rem; color: #666; display: flex; gap: 15px; }
+.order-price { font-weight: bold; color: var(--primary-color); font-size: 1.1rem; }
+.btn-download { background: white; border: 1px solid var(--primary-color); color: var(--primary-color); padding: 8px 15px; border-radius: 5px; cursor: pointer; }
+.btn-download:hover { background: var(--primary-color); color: white; }
+footer { background: #000; color: #666; text-align: center; padding: 20px; margin-top: 50px; }
+@media (max-width: 768px) { .dashboard-container { flex-direction: column; } .order-card { flex-direction: column; align-items: flex-start; gap: 15px; } }

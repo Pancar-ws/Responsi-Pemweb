@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Papua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">Explore Papua</a>
+        <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        <ul class="nav-links">
+            <li><a href="#destinasi">Destinasi</a></li>
+            <li><a href="#pengalaman">Pengalaman</a></li>
+            <li><a href="#kuliner">Kuliner</a></li>
+            <li><a href="#info">Informasi</a></li>
+            <li><a href="../login/login.html" class="btn-login-mobile">Masuk</a></li>
+        </ul>
+        <div class="nav-actions"><a href="../login/login.html" class="btn-login">Masuk</a></div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Menjelajahi Keajaiban Papua</h1>
+            <p>There's More Than Meets The Eye</p>
+            <div class="cta-container">
+                <a href="../search/search.html" class="btn-cta">Cari Tiket Sekarang</a>
+            </div>
+        </div>
+        <div class="hero-footer"><span>Raja Ampat, Papua Barat</span></div>
+    </header>
+
+    <section class="spotlight" id="destinasi">
+        <div class="spotlight-text">
+            <h4>Spotlight</h4>
+            <h2>Destinasi <br>Ikonik</h2>
+            <p>Papua menawarkan keindahan alam yang tak tertandingi.</p>
+            <a href="#" class="btn-outline">Lihat Semua</a>
+        </div>
+        <div class="card-scroll">
+            <div class="card"><img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?q=80&w=2070" alt="Raja Ampat"><div class="card-info"><h3>Raja Ampat</h3><p>Surga penyelam dunia.</p></div></div>
+            <div class="card"><img src="img/baliem.jpg" alt="Lembah Baliem" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Baliem_Valley_Papua_Indonesia_1.jpg/1200px-Baliem_Valley_Papua_Indonesia_1.jpg'"><div class="card-info"><h3>Lembah Baliem</h3><p>Budaya suku Dani.</p></div></div>
+            <div class="card"><img src="img/teluk.jpg" alt="Teluk Cendrawasih" onerror="this.src='https://indonesia.travel/content/dam/indtravelrevamp/en/destinations/maluku-papua/west-papua/cendrawasih-bay/header.jpg'"><div class="card-info"><h3>Teluk Cendrawasih</h3><p>Berenang bersama Hiu Paus.</p></div></div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="pengalaman">
+        <div class="container">
+            <div class="section-header"><h4>Kata Mereka</h4><h2>Pengalaman Tak Terlupakan</h2><p>Cerita asli dari para petualang.</p></div>
+            <div class="review-grid">
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Trip ke Raja Ampat sangat terorganisir."</p><div class="reviewer"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="User"><div class="reviewer-info"><h5>Sarah Wijaya</h5><span>Jakarta</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Lembah Baliem sungguh magis."</p><div class="reviewer"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="User"><div class="reviewer-info"><h5>Budi Santoso</h5><span>Surabaya</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="culinary" id="kuliner">
+        <div class="container">
+            <div class="section-header-dark"><h4>Cita Rasa Timur</h4><h2>Kuliner Legendaris</h2><p>Rasa autentik Papua.</p></div>
+            <div class="food-grid">
+                <div class="food-card"><img src="img/papeda.jpeg" alt="Papeda" onerror="this.src='https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/09/papeda-kuah-kuning-3631980894.jpg'"><div class="food-content"><h3>Papeda</h3><p>Makanan pokok sagu.</p></div></div>
+                <div class="food-card"><img src="img/udang.jpg" alt="Udang" onerror="this.src='https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/13/2023/10/25/Udang-Selingkuh-890288496.jpg'"><div class="food-content"><h3>Udang Selingkuh</h3><p>Udang unik Baliem.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="info"><p>&copy; 2025 Explore Papua Project.</p></footer>
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Explore Papua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar" style="background-color: #002f32;">
+        <a href="home.html" class="logo" style="text-decoration:none; color:inherit;">Explore Papua</a>
+        <div class="nav-actions"><a href="home.html" class="btn-login" style="border:none;">Keluar</a></div>
+    </nav>
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+            <div class="user-info">
+                <img src="https://ui-avatars.com/api/?name=User+Papua&background=E0F7FA&color=006064" alt="Profil">
+                <h3>User Papua</h3>
+                <p>Member 2024</p>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#" class="active">📦 Riwayat Pesanan</a></li>
+                <li><a href="home.html">🚪 Keluar</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard-content">
+            <div class="content-header"><h2>Riwayat Pesanan</h2></div>
+            <div class="orders-list" id="orderContainer"><p>Memuat...</p></div>
+        </main>
+    </div>
+    <footer><p>&copy; 2025 Explore Papua Project.</p></footer>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
